@@ -60,7 +60,7 @@ export default ({
                         variant="display"
                         style={{ marginTop: 20 }}
                     >
-                        {Grad}, {Obrazovanje}, {Telefon} ,{email}
+                        <p>{Grad}</p> <p>{Obrazovanje}</p><p>{Telefon}</p> <p>{email}</p>
                     </Typography>
                 </Paper>
             </Grid>

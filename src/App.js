@@ -2,8 +2,9 @@ import React, { Component, Fragment } from 'react';
 
 import Footer from "./client/components/Footer";
 import Header from "./client/components/Header";
-import Logic from "./client/Logic/Logic";
-import { Grad, therapists } from "./ListOfTherapists";
+import LowerContainer from "./client/Logic/LowerContainer";
+//import UpperContainer from "./client/Logic/UpperContainer";
+import { Grad, therapists } from "./Store";
 
 class App extends Component {
   state = {
@@ -45,7 +46,7 @@ class App extends Component {
 
     return <Fragment>
       <Header />
-      <Logic
+      <LowerContainer
         therapist={therapist}
         list={list}
         therapists={therapists}
