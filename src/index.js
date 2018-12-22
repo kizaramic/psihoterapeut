@@ -3,5 +3,13 @@ import ReactDOM from "react-dom";
 import App from './App';
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<App />, document.getElementById('App'));
+
+
+
+
+
+ReactDOM.render(
+    <App />
+    ,
+    document.getElementById('App'));
 serviceWorker.unregister();

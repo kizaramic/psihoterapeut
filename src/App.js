@@ -8,7 +8,7 @@ import { Grad, therapists } from "./ListOfTherapists";
 class App extends Component {
   state = {
     therapists,
-    therapist: ""
+    therapist: {}
   }
 
   getTherapistByCity() {
@@ -54,7 +54,7 @@ class App extends Component {
       <Footer
         list={list}
         Grad={Grad}
-        onSelect={this.handleGrad}
+        onSelect={this.handleGradSelected}
       />
     </Fragment>
   }

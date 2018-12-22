@@ -8,8 +8,7 @@ export default ({ Grad, list, onSelect }) => {
         ? Grad.findIndex(group => group === list) + 1
         : 0
 
-    const onIndexSelect = (e, index) =>
-        onSelect(index === 0 ? '' : Grad[index - 1])
+    const onIndexSelect = ((e, index) => onSelect(index === 0 ? '' : Grad[index - 1]))
 
 
     return <Paper>
@@ -22,10 +21,9 @@ export default ({ Grad, list, onSelect }) => {
         >
             <Tab label="All" />
             {Grad.map(list =>
-                <Tab label={list} />
+                <Tab key={list} label={list} />
             )}
         </Tabs>
     </Paper>
 
 }
-

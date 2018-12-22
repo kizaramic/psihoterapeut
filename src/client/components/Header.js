@@ -7,7 +7,7 @@ const Header = (props) => {
             <Toolbar>
                 <Typography variant="headline" color="inherit">
                     Pronadji svog psihoterapeuta
-            </Typography>
+                </Typography>
             </Toolbar>
         </AppBar>
     )
